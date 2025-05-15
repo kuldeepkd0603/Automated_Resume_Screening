@@ -12,11 +12,14 @@ Project Title is a project that does something useful. It was created to solve a
 
 To install Project Title, follow these steps:
 
-1. Clone the repository: **`git clone https://github.com/username/project-title.git`**
-2. Navigate to the project directory: **`cd project-title`**
-3. Install dependencies: **`npm install`**
-4. Build the project: **`npm run build`**
-5. Start the project: **`npm start`**
+1. Clone the repository: **`git clone https://github.com/kuldeepkd0603/Automated_Resume_Screening.git`**
+2. Navigate to the project directory: **`cd Automated_Resume_Screening`**
+3. Create the Virtual Environment :**`python -m venv venv`**
+4. Activate the Virtual Environment:**`venv\Scripts\activate.bat`**
+5. Install dependencies: **`pip install -r requirements.txt`**
+6. Start the project: **`python app.py`**
+7. Run link like these at browser :**`http://127.0.0.1:5000/`** 
+
 
 ## **Usage**
 
