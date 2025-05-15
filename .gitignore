@@ -1,1 +1,5 @@
 venv/ 
+uploads/
+utils/__pycache__
+data/raw/
+models/extra/

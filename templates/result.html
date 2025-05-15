@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Classification Result</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card-content {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .card-content div {
+            margin-bottom: 10px;
+        }
+
+        .card-content ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .card-content ul li {
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        /* Button Styles */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .card-header {
+                font-size: 18px;
+            }
+
+            .card-content {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Resume Classification Result</h2>
+
+    <div class="card">
+        <div class="card-header">Job Role Prediction</div>
+        <div class="card-content">
+            <!-- Job Role Prediction -->
+            <p>{{ model_prediction }}</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Cluster Prediction</div>
+        <div class="card-content">
+            <!-- Cluster Prediction -->
+            <p>{{ cluster_prediction }}</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Resume Information</div>
+        <div class="card-content">
+            <div><strong>Name:</strong> {{ resumeInfo.Name }}</div>
+            <div><strong>Email:</strong> {{ resumeInfo.Email }}</div>
+            <div><strong>Phone:</strong> {{ resumeInfo.Phone }}</div>
+            <div><strong>Sector:</strong> {{ resumeInfo.Sector }}</div>
+            <div><strong>Experience:</strong> {{ resumeInfo.Experience }}</div>
+            <div><strong>linkdin:</strong> {{ resumeInfo.LinkedIn }}</div>
+            <div><strong>GitHub:</strong> {{ resumeInfo.GitHub }}</div>
+            <div><strong>Education:</strong>
+                <ul>
+                    {% for edu in resumeInfo.Education %}
+                        <li>{{ edu }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div><strong>Skills:</strong>
+                <ul>
+                    {% for skill in resumeInfo.Skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='/'">Classify Another Resume</button>
+</div>
+
+</body>
+</html>
