@@ -2,11 +2,40 @@
 
 ## **Project Title**
 
-Project Title is a description of the project and its purpose.
+Automated Resume Screening and Classification System.
 
 ## **Introduction**
 
-Project Title is a project that does something useful. It was created to solve a particular problem, and it provides a solution that is better than the alternatives.
+Automated Resume Screening and Classification System is a machine learning-based application designed to classify resumes into specific job sectors and extract critical information from them. This project aims to streamline the recruitment process by automating both the classification and information extraction tasks, significantly reducing the time and effort required for initial candidate screening
+
+
+### **1. Resume Classification**
+
+Classify resumes into predefined sectors (e.g., Eng, BPO, HR).
+
+Use clustering to identify new or emerging job sectors based on resume content.
+
+### **2. Resume Information Extraction**
+
+Extract key details like Name, Phone Number, Email, Education, Experience, Skills, and Social Links (LinkedIn, GitHub).
+
+Store the extracted information in a structured format (CSV).
+
+Provide detailed analysis of candidate profiles for better hiring decisions
+
+
+## **Features**
+
+1. Automated resume classification based on sector.
+
+2. Unsupervised clustering for grouping similar resumes.
+
+3. Key information extraction for faster candidate screening.
+
+4. CSV export for easy data analysis and sharing.
+
+5. Scalable and customizable for various industries.
+
 
 ## **Installation**
 
@@ -19,59 +48,6 @@ To install Project Title, follow these steps:
 5. Install dependencies: **`pip install -r requirements.txt`**
 6. Start the project: **`python app.py`**
 7. Run link like these at browser :**`http://127.0.0.1:5000/`** 
+(note)Upload a resume file
 
 
-## **Usage**
-
-To use Project Title, follow these steps:
-
-1. Open the project in your favorite code editor.
-2. Modify the source code to fit your needs.
-3. Build the project: **`npm run build`**
-4. Start the project: **`npm start`**
-5. Use the project as desired.
-
-## **Contributing**
-
-If you'd like to contribute to Project Title, here are some guidelines:
-
-1. Fork the repository.
-2. Create a new branch for your changes.
-3. Make your changes.
-4. Write tests to cover your changes.
-5. Run the tests to ensure they pass.
-6. Commit your changes.
-7. Push your changes to your forked repository.
-8. Submit a pull request.
-
-## **License**
-
-Project Title is released under the MIT License. See the **[LICENSE](https://www.blackbox.ai/share/LICENSE)** file for details.
-
-## **Authors and Acknowledgment**
-
-Project Title was created by **[Your Name](https://github.com/username)**.
-
-Additional contributors include:
-
-- **[Contributor Name](https://github.com/contributor-name)**
-- **[Another Contributor](https://github.com/another-contributor)**
-
-Thank you to all the contributors for their hard work and dedication to the project.
-
-## **Code of Conduct**
-
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project, you agree to abide by its terms. See the **[CODE_OF_CONDUCT.md](https://www.blackbox.ai/share/CODE_OF_CONDUCT.md)** file for more information.
-
-
-
-**A:** Project Title is released under the MIT License. See the **[LICENSE](https://www.blackbox.ai/share/LICENSE)** file for details.
-
-## **Changelog**
-
-- **0.1.0:** Initial release
-- **0.1.1:** Fixed a bug in the build process
-- **0.2.0:** Added a new feature
-- **0.2.1:** Fixed a bug in the new feature
-
-## **Contact**
