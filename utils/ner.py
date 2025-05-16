@@ -1,6 +1,6 @@
 import re
 import spacy
-from utils.keyword import sector_keywords,general_skills,degrees
+from .keyword import sector_keywords,general_skills,degrees
 import os
 import csv
 
@@ -45,18 +45,13 @@ def extract_experience(text):
         return f"error occured in extract experience function {e}"
 def extract_education(text, degrees):
     try:
-        # Convert text to lowercase for matching
         text = text.lower()
-        # Convert all degrees to lowercase for consistency
         lower_degrees = [degree.lower() for degree in degrees]
-        
-        # Extract all words (including multi-word degrees like B. Tech, M. Sc)
         words = re.findall(r'\b\w+(?:\.\w+|\w+)*\b', text)
         
         found_degrees = []
         for word in set(words):
             if word in lower_degrees:
-                # Preserve the original case for the extracted degree
                 original_degree = degrees[lower_degrees.index(word)]
                 found_degrees.append(original_degree)
 
@@ -66,23 +61,14 @@ def extract_education(text, degrees):
         return f"Error occurred in extract_education function: {e}"
 def extract_links(text):
     try:
-        # Normalize text to lowercase for better matching
         text = text.lower()
-
-        # Pattern for LinkedIn links
         linkedin_pattern = r"(https?://)?(www\.)?linkedin\.com/in/[a-zA-Z0-9-]+"
-        # Pattern for GitHub links
         github_pattern = r"(https?://)?(www\.)?github\.com/[a-zA-Z0-9-]+"
-        
-        # Extract LinkedIn and GitHub links
         linkedin_link = re.search(linkedin_pattern, text)
         github_link = re.search(github_pattern, text)
-        
-        # Extract links or return "not found" message
+    
         linkedin = linkedin_link.group(0) if linkedin_link else "LinkedIn not found"
         github = github_link.group(0) if github_link else "GitHub not found"
-        
-        # Ensure the links have a complete URL format
         if linkedin != "LinkedIn not found" and not linkedin.startswith("http"):
             linkedin = "https://" + linkedin
         if github != "GitHub not found" and not github.startswith("http"):
@@ -115,19 +101,18 @@ OUTPUT_CSV = "extracted_resume_details.csv"
 headers = ["Name", "Education", "Experience", "Phone Number", "Email", "Skills", "Sector", "LinkedIn", "GitHub"]
 
 def save_to_csv(text, sector):
-    data_dict = extract_resume_info(text, sector)  # returns dict
+    data_dict = extract_resume_info(text, sector) 
 
-    # Check if file exists to decide write mode and header
+    
     file_exists = os.path.isfile(OUTPUT_CSV)
 
     with open(OUTPUT_CSV, mode="a" if file_exists else "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
 
-        # Write header only if file is new
+        
         if not file_exists:
             writer.writerow(headers)
 
-        # Prepare row in same order as headers
         row = [data_dict.get(header, "") for header in headers]
         writer.writerow(row)
 

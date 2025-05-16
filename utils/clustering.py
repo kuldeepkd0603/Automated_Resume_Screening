@@ -1,9 +1,9 @@
 import pandas as pd
 import numpy as np
 import joblib
-from utils.preprocess import preprocess_text
 import pickle
-from utils.constants import clustering
+from .preprocess import  preprocess_text
+from .constants import  clustering
 
 
 

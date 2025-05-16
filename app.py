@@ -3,11 +3,8 @@ import os
 import joblib
 import docx2txt
 import PyPDF2
-from utils.ner import extract_resume_info,save_to_csv
-from utils.text_extracter import extract_text
-from utils.predict import prediction
-from utils.clustering import cluster
 
+from utils import extract_resume_info, save_to_csv, extract_text, prediction, cluster
 app=Flask(__name__)
 
 @app.route('/')

@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import joblib
-from utils.preprocess import preprocess_text
-from utils.constants import classification
+from .preprocess import preprocess_text
+from .constants import  classification
+
 
 
 job_role_mapping = {

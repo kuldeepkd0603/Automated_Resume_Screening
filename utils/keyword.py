@@ -27,124 +27,48 @@ sector_keywords = {
 
 
 degrees = [
-    # Bachelor of Technology combinations
     "Bachelor of Technology (B.Tech)", "B.Tech", "B. Tech", "BTech", "Bachelor of Technology", 
     "Bachelor of Technology (B. Tech)", "B. Tech", "BTech", "B.Tech", "Bachelor of Technology", 
-    
-    # Master of Technology combinations
     "Master of Technology (M.Tech)", "M.Tech", "M. Tech", "MTech", 
     "Master of Technology", "M. Tech", "MTech", "MTech Degree", 
-    
-    # Bachelor of Science combinations
     "Bachelor of Science (B.Sc)", "B.Sc", "BSc", "B.S.", "BSc Hons", "B.Sc Hons", 
-    "Bachelor of Science", "B.Sc Degree", "B.Sc Hons Degree", 
-    
-    # Master of Science combinations
+    "Bachelor of Science", "B.Sc Degree", "B.Sc Hons Degree",
     "Master of Science (M.Sc)", "M.Sc", "MSc", "M.S.", 
     "Master of Science", "M.Sc Degree", "M.Sc Hons", 
-    
-    # Doctor of Philosophy combinations
-    "Doctor of Philosophy (PhD)", "PhD", "Doctorate", "PhD Degree", "Doctor of Philosophy", 
-    
-    # Diploma combinations
     "Diploma", "Dipl.", "Diploma Degree", 
-    
-    # Bachelor of Engineering combinations
     "Bachelor of Engineering (B.E)", "B.E", "BEng", "Bachelor of Engineering", 
     "B.E Degree", "BEng Degree", 
-    
-    # Master of Engineering combinations
     "Master of Engineering (M.E)", "M.E", "MEng", "Master of Engineering", 
     "M.E Degree", "MEng Degree", 
-    
-    # Bachelor of Computer Applications combinations
     "Bachelor of Computer Applications (BCA)", "BCA", "BCA Degree", 
-    
-    # Master of Computer Applications combinations
     "Master of Computer Applications (MCA)", "MCA", "MCA Degree", 
-    
-    # Bachelor of Commerce combinations
     "Bachelor of Commerce (B.Com)", "B.Com", "BCom", "BCom Degree", 
-    
-    # Master of Commerce combinations
     "Master of Commerce (M.Com)", "M.Com", "MCom", "MCom Degree", 
-    
-    # Bachelor of Arts combinations
     "Bachelor of Arts (BA)", "BA", "B.A.", "BA Degree", 
-    
-    # Master of Arts combinations
     "Master of Arts (MA)", "MA", "M.A.", "MA Degree", 
-    
-    # Bachelor of Business Administration combinations
     "Bachelor of Business Administration (BBA)", "BBA", "BBA Degree", 
-    
-    # Master of Business Administration combinations
     "Master of Business Administration (MBA)", "MBA", "MBA Degree", 
-    
-    # Bachelor of Pharmacy combinations
     "Bachelor of Pharmacy (B.Pharm)", "B.Pharm", "BPharm", "BPharm Degree", 
-    
-    # Master of Pharmacy combinations
     "Master of Pharmacy (M.Pharm)", "M.Pharm", "MPharm", "MPharm Degree", 
-    
-    # Bachelor of Dental Surgery combinations
     "Bachelor of Dental Surgery (BDS)", "BDS", "BDS Degree", 
-    
-    # Master of Dental Surgery combinations
     "Master of Dental Surgery (MDS)", "MDS", "MDS Degree", 
-    
-    # Bachelor of Medicine and Bachelor of Surgery combinations
     "Bachelor of Medicine and Bachelor of Surgery (MBBS)", "MBBS", "MBBS Degree", 
-    
-    # Doctor of Medicine combinations
     "Doctor of Medicine (MD)", "MD", "MD Degree", 
-    
-    # Bachelor of Homoeopathic Medicine and Surgery combinations
     "Bachelor of Homoeopathic Medicine and Surgery (BHMS)", "BHMS", "BHMS Degree", 
-    
-    # Bachelor of Ayurvedic Medicine and Surgery combinations
     "Bachelor of Ayurvedic Medicine and Surgery (BAMS)", "BAMS", "BAMS Degree", 
-    
-    # Bachelor of Physiotherapy combinations
     "Bachelor of Physiotherapy (BPT)", "BPT", "BPT Degree", 
-    
-    # Master of Physiotherapy combinations
     "Master of Physiotherapy (MPT)", "MPT", "MPT Degree", 
-    
-    # Bachelor of Fine Arts combinations
     "Bachelor of Fine Arts (BFA)", "BFA", "BFA Degree", 
-    
-    # Master of Fine Arts combinations
     "Master of Fine Arts (MFA)", "MFA", "MFA Degree", 
-    
-    # Bachelor of Laws combinations
     "Bachelor of Laws (LLB)", "LLB", "LLB Degree", 
-    
-    # Master of Laws combinations
     "Master of Laws (LLM)", "LLM", "LLM Degree", 
-    
-    # Bachelor of Architecture combinations
-    "Bachelor of Architecture (B.Arch)", "B.Arch", "BArch", "B.Arch Degree", 
-    
-    # Master of Architecture combinations
+    "Bachelor of Architecture (B.Arch)", "B.Arch", "BArch", "B.Arch Degree",
     "Master of Architecture (M.Arch)", "M.Arch", "MArch", "M.Arch Degree", 
-    
-    # Bachelor of Education combinations
     "Bachelor of Education (B.Ed)", "B.Ed", "B.Ed Degree", 
-    
-    # Master of Education combinations
     "Master of Education (M.Ed)", "M.Ed", "M.Ed Degree", 
-    
-    # Bachelor of Science (Hons) combinations
     "Bachelor of Science (Hons)", "B.Sc (Hons)", "BSc (Hons)", "BSc Hons", "B.Sc Hons", 
-    
-    # Master of Science (Hons) combinations
     "Master of Science (Hons)", "M.Sc (Hons)", "M.Sc Hons", "MSc Hons", 
-    
-    # Bachelor of Science in Information Technology combinations
     "Bachelor of Science in Information Technology (B.Sc IT)", "B.Sc IT", "BSc IT", 
-    
-    # Master of Science in Information Technology combinations
     "Master of Science in Information Technology (M.Sc IT)", "M.Sc IT", "MSc IT"
 ]
 general_skills = ["Communication", "Time Management", "Teamwork", "Problem Solving", "Leadership", "Critical Thinking", "Adaptability", "Creativity", "Organization", "Interpersonal Skills", "Attention to Detail", "Emotional Intelligence", "Project Management", "Decision Making", "Negotiation", "Networking", "Presentation Skills", "Work Ethic", "Conflict Resolution", "Collaboration", "Research", "Customer Service", "Multitasking", "Data Analysis", "Business Strategy"]

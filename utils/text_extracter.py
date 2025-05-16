@@ -11,11 +11,8 @@ def extract_text(file_path):
         text = ''
         
         if ext == '.pdf':
-            # Try to extract text using pdfplumber (more accurate for text-based PDFs)
             with pdfplumber.open(file_path) as pdf:
                 text = ''.join([page.extract_text() for page in pdf.pages])
-            
-            # If no text is found (likely a scanned PDF), use OCR to extract text
             if not text.strip():
                 text = extract_text_from_pdf_with_ocr(file_path)
         
@@ -32,7 +29,6 @@ def extract_text(file_path):
 
 def extract_text_from_pdf_with_ocr(file_path):
     try:
-        # Open the PDF as an image for OCR extraction
         with pdfplumber.open(file_path) as pdf:
             text = ''
             for page in pdf.pages:
